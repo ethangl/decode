@@ -1,0 +1,46 @@
+body {
+  background-color: #eee;
+  margin: 0;
+}
+
+.box {
+  @include margin(null auto);
+  @include size(100vh);
+  background-color: #fff;
+  position: relative;
+}
+
+.corgi,
+.mosque {
+  @include position(absolute, 0);
+  background-size: cover;
+  margin: 1.5vh;
+  mix-blend-mode: multiply;
+}
+
+.corgi {
+  background-image: image-url("corgi.png");
+}
+
+.mosque {
+  background-image: image-url("mosque.png");
+  pointer-events: none;
+}
+
+pre {
+  @include position(absolute, 0);
+  color: #99ff99;
+  font-size: 4vh;
+  letter-spacing: 0.6em;
+  line-height: 1.18em;
+  margin: auto;
+  padding: 3vh;
+}
+
+.decoder {
+  @include position(absolute, 0);
+  @include size(40vh 20vh);
+  background-color: #ff0000;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 8px rgba(0, 0, 0, 0.2);
+  mix-blend-mode: multiply;
+}
