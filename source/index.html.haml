@@ -1,0 +1,28 @@
+---
+---
+
+.glitch-container
+  .glitch-image#red
+    = image_tag "austin-red.jpg"
+
+.glitch-container
+  .glitch-image#green
+    = image_tag "austin-green.jpg"
+
+.decoder
+
+- content_for :javascript do
+  :javascript
+    var imgPath = "images/austin-red.jpg";
+    var imgContainer = document.getElementById("red");
+
+    var intervalID = setInterval(function() {
+    	var params = {
+    		amount:     randomInteger(0, 99),
+    		iterations: randomInteger(0, 99),
+    		quality:    99,
+    		seed:       randomInteger(0, 99)
+    	};
+
+    	glitchImage(params);
+    }, 66);
