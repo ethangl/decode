@@ -11,16 +11,17 @@
     var imgPath = "images/turtles.jpg";
     var imgContainer = document.getElementById("bg");
 
-    $(window).scroll(
-      $.throttle(
-        function(){
-        	var params = {
-        		amount:     randomInteger(1, 99),
-        		iterations: randomInteger(10, 30),
-        		quality:    randomInteger(1, 99),
-        		seed:       randomInteger(1, 99)
-        	};
+    glitchIt = function() {
+      var params = {
+        amount:     randomInteger(1, 99),
+        iterations: randomInteger(10, 30),
+        quality:    randomInteger(1, 99),
+        seed:       randomInteger(1, 99)
+      };
 
-        	glitchImage(params);
-        },
-      100, null, true));
+      glitchImage(params);
+    }
+
+    $(window).scroll($.throttle(glitchIt, 83, null, true));
+
+    glitchIt();
