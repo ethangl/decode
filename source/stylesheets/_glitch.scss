@@ -1,24 +1,9 @@
-.glitch-container {
-  align-items: center;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  left: 0;
-  min-height: 100vh;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+.glitch {
+  @include position(fixed, 0);
+  z-index: 0;
 
-#green {
-  mix-blend-mode: multiply;
-}
-
-#red {
-  background-color: #ff0000;
-}
-
-#red img {
-  mix-blend-mode: lighten;
-  -webkit-filter: grayscale(100%);
+  img {
+    @include size(100%);
+    object-fit: cover;
+  }
 }

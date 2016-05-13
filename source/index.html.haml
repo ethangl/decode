@@ -1,28 +1,26 @@
 ---
 ---
 
-.glitch-container
-  .glitch-image#red
-    = image_tag "austin-red.jpg"
+.glitch#bg
+  = image_tag "images/turtles.jpg"
 
-.glitch-container
-  .glitch-image#green
-    = image_tag "austin-green.jpg"
-
-.decoder
+-# .decoder
 
 - content_for :javascript do
   :javascript
-    var imgPath = "images/austin-red.jpg";
-    var imgContainer = document.getElementById("red");
+    var imgPath = "images/turtles.jpg";
+    var imgContainer = document.getElementById("bg");
 
-    var intervalID = setInterval(function() {
-    	var params = {
-    		amount:     randomInteger(0, 99),
-    		iterations: randomInteger(0, 99),
-    		quality:    99,
-    		seed:       randomInteger(0, 99)
-    	};
+    $(window).scroll(
+      $.throttle(
+        function(){
+        	var params = {
+        		amount:     randomInteger(1, 99),
+        		iterations: randomInteger(10, 30),
+        		quality:    randomInteger(1, 99),
+        		seed:       randomInteger(1, 99)
+        	};
 
-    	glitchImage(params);
-    }, 66);
+        	glitchImage(params);
+        },
+      100, null, true));
