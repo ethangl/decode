@@ -1,0 +1,33 @@
+.prose {
+  background-size: cover;
+  box-shadow: 0 0 10vh rgba(#000, 0.2);
+  color: #fff;
+
+  h2,
+  p {
+    margin: 3vh 0;
+    max-width: 28em;
+  }
+
+  h2 {
+    font-size: 5vh;
+    font-weight: 200;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 3vh;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}
+
+#venue {
+  background-color: #d1eacf;
+  background-image: image-url("ritz.png");
+}
+
+#why-austin {
+  background-color: #ffa6c9;
+  background-image: image-url("franklins.png");
+}

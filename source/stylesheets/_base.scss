@@ -1,7 +1,6 @@
 body {
   background-color: #1a1a1a;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  height: 200vh;
   margin: 0;
   color: #fff;
 }
@@ -9,6 +8,12 @@ body {
 img {
   max-width: 100%;
   vertical-align: top;
+}
+
+section {
+  min-height: 100vh;
+  padding: $base-spacing;
+  position: relative;
 }
 
 .title {
@@ -20,7 +25,7 @@ img {
   letter-spacing: -0.07em;
   line-height: 0.65;
   margin: 0;
-  mix-blend-mode: multiply;
+  mix-blend-mode: difference;
   white-space: nowrap;
   z-index: -1;
 

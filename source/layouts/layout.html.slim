@@ -8,7 +8,7 @@ html
     title = current_page.data.title || "CodeLift"
     = stylesheet_link_tag "all"
 
-  body
+  body#body
     = yield
 
     = javascript_include_tag "all"
