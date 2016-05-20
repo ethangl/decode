@@ -1,4 +1,75 @@
 .venue {
+  float: right;
   font-family: $heading-font-family;
   font-weight: 300;
+  margin-right: 20%;
+  margin-top: 20vh;
+  max-width: 800px;
+  opacity: 0.85;
+}
+
+.venue-address {
+  display: block;
+  font-style: normal;
+  position: relative;
+}
+
+.venue-street {
+  display: block;
+  font-size: 3vh;
+  line-height: 0.9;
+  margin-bottom: 0;
+  margin-left: 10rem;
+}
+
+.venue-name {
+  font-size: 7vh;
+  font-weight: 600;
+  line-height: 0.6;
+}
+
+.venue-state {
+  display: block;
+  font-size: 3vh;
+  position: relative;
+  right: -1rem;
+  text-align: right;
+  top: -1.25rem;
+}
+
+.date {
+  left: -1em;
+  position: relative;
+  top: -4.5vh;
+}
+
+.date-location,
+.date-day {
+  background-color: #FF00DA;
+  display: block;
+  font-size: 2vh;
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin-bottom: 0.5rem;
+  mix-blend-mode: overlay;
+  padding: 4px 0 1px;
+  text-transform: uppercase;
+  width: 380px;
+}
+
+.button {
+  background-blend-mode: overlay;
+  background-color: #D800FF;
+  color: #fff;
+  display: inline-block;
+  float: right;
+  font-size: 3vh;
+  letter-spacing: 3px;
+  padding: 0.5rem 1.5rem;
+  text-indent: -1.25em;
+  text-transform: uppercase;
+}
+
+.venue-about {
+  font-family: $base-font-family;
 }

@@ -12,17 +12,19 @@
   %span(data-anchor-target="#body" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(-10vh)") KEEP
   %span(data-anchor-target="#body" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(-12vh)") RUBY
   %span(data-anchor-target="#body" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(-14vh)") WEIRD
+  %span.title-state(data-anchor-target="#body" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(-16vh)") Austin, Texas
 
 %section#hero
-  %header
-    %address
-      %span Alamo Drafthouse Ritz
-      %span 320 E 6th St.
-      %span Austin, TX 78701
+  %header.venue
+    %address.venue-address
+      %span.venue-street 320 E 6th St.
+      %span.venue-name Ala<span class="uppercase">mo</span> <span class="uppercase">Dr</span>a<span class="uppercase">f</span>t<span class="uppercase">hou</span>se <span class="lowercase">R</span><span class="uppercase">it</span>z
+      %span.venue-state Austin, TX 78701
     .date
-      %span Friday, October 28, 2016
-      %span Austin, Texas
-    = link_to "Buy Tickets", "#", class: "buybuybuy"
+      %span.date-day Friday, October 28, 2016
+      %span.date-location Austin, Texas
+    = link_to "#", class: "button buybuybuy" do
+      <span class="lowercase">B</span>uy T<span class="lowercase">ic</span>kets
 
 %section.prose#venue(data-bottom-top="filter: hue-rotate(0deg)" data-top-bottom="filter: hue-rotate(120deg)")
   %p The Conference venue is the historically weird Alamo Ritz Drafthouse, located in the heart of downtown. Each theater seat has its own table. During the conference you'll enjoy some weird talks as you're served gourmet food from the comfort of your oversized seat. All in front of one of the largest screens we've ever seen.
