@@ -3,6 +3,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 200vh;
   margin: 0;
+  color: #fff;
 }
 
 img {
@@ -21,7 +22,7 @@ img {
   margin: 0;
   mix-blend-mode: multiply;
   white-space: nowrap;
-  z-index: 0;
+  z-index: -1;
 
   span {
     display: block;
