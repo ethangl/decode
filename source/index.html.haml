@@ -27,13 +27,16 @@
       <span class="lowercase">B</span>uy T<span class="lowercase">ic</span>kets
 
 %section.prose#venue(data-bottom-top="filter: hue-rotate(0deg)" data-top-bottom="filter: hue-rotate(120deg)")
-  %p The Conference venue is the historically weird Alamo Ritz Drafthouse, located in the heart of downtown. Each theater seat has its own table. During the conference you'll enjoy some weird talks as you're served gourmet food from the comfort of your oversized seat. All in front of one of the largest screens we've ever seen.
-  %p After the conference you'll have plenty to see and do as the venue is located in the middle of world famous Sixth Street. Made up of dozens of bars and venues, you're guaranteed to hear a wide variety of live music as you walk down the street which is closed for pedestrian traffic for weekends. Known as "The music capital of the world" Austin is where musicians come to be discovered and discover one another.
 
-%section#speakers
+  %h2.prose-venue-title Ab<span class="lowercase">ou</span>t the D<span class="lowercase">raf</span>tho<span class="lowercase">us</span>e
+
+  .prose-venue-content(data-anchor-target="#body" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(-20vh)")
+    %p The Conference venue is the historically weird Alamo Ritz Drafthouse, located in the heart of downtown. Each theater seat has its own table. During the conference you'll enjoy some weird talks as you're served gourmet food from the comfort of your oversized seat. All in front of one of the largest screens we've ever seen.
+    %p After the conference you'll have plenty to see and do as the venue is located in the middle of world famous Sixth Street. Made up of dozens of bars and venues, you're guaranteed to hear a wide variety of live music as you walk down the street which is closed for pedestrian traffic for weekends. Known as "The music capital of the world" Austin is where musicians come to be discovered and discover one another.
+
+%section#speakers.speakers
   %header
-    %h2 Speakers
-    = link_to "Call for Proposal", "#"
+    %h2 Spe<span class="break">akers</span>
 
   %ul
     %li
@@ -42,6 +45,8 @@
       %h3
         = link_to "Nick Means", "https://twitter.com/nmeans"
 
+  = link_to  "#", class: "button speakers-call" do
+    <span class="lowercase">Ca</span>ll <span class="lowercase">for</span> P<span class="lowercase">rop</span>osal
 %section#sponsors
   %header
     %h2 Sponsors

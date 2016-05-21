@@ -1,0 +1,24 @@
+.button {
+  background-blend-mode: overlay;
+  color: #fff;
+  display: inline-block;
+  float: right;
+  font-size: 3vh;
+  letter-spacing: 3px;
+  padding: 0.5rem 1.5rem;
+  text-indent: -1.25em;
+  text-transform: uppercase;
+
+  &.buybuybuy {
+    background-color: #D800FF;
+  }
+
+  &.speakers-call {
+    border: 1px solid #fff;
+    text-indent: -3em;
+
+    &:hover {
+      background-color: #ea1fff;
+    }
+  }
+}
