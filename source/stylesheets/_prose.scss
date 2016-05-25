@@ -1,37 +1,40 @@
-.prose {
-  background-size: cover;
+.prose { 
+  background-size: cover; 
   box-shadow: 0 0 10vh rgba(#000, 0.2);
   color: #fff;
 
-  h2,
   p {
     margin: 3vh 0;
-    max-width: 28em;
-  }
-
-  h2 {
-    font-size: 5vh;
-    font-weight: 200;
-    line-height: 1.2;
-  }
-
-  p {
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 300;
     line-height: 1.5;
   }
+}
 
-  .prose-venue-title {
-    font-size: 6vh;
+.prose-title {
+  font-size: 6vh;
+  line-height: 1;
+
+  &.venue-title {
     margin-top: -2em;
     margin-bottom: -1.25rem;
+  }
+
+  .why-austin-wrapper & {
+    margin-bottom: 0;
   }
 }
 
 .prose-venue-content {
-  background-color: rgba(#4a90e2, 0.8);
+  background-color: rgba(#4a90e2, 0.6);
   display: inline-block;
   margin-left: -$base-spacing;
+  max-width: 60em;
+}
+
+.prose-austin-content {
+  background-color: rgba(red, 0.6);
+  padding: 0.5em 2em;
 }
 
 #venue {
@@ -42,4 +45,9 @@
 #why-austin {
   background-color: #ffa6c9;
   background-image: image-url("franklins.png");
+}
+
+.why-austin-wrapper {
+  @include margin(null auto);
+  max-width: 60em;
 }

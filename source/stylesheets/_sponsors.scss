@@ -1,0 +1,24 @@
+.sponsors {
+  @include margin(15vh null);
+
+  h2 {
+    background-color: $sponsors-color;
+    display: inline-block;
+    float: right;
+    letter-spacing: 5px;
+    margin-right: -10rem;
+    padding: 4px 20rem 8px 6rem;
+  }
+
+  .more-to-come {
+    color: $sponsors-color;
+    font-size: 8vh;
+    font-weight: bold;
+    margin: 0 -20rem;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+}

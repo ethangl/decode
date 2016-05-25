@@ -19,9 +19,12 @@ img {
 }
 
 section {
-  min-height: 95vh;
   padding: $base-spacing;
   position: relative;
+
+  &.almost-full-height {
+    min-height: 95vh;
+  }
 }
 
 .title {
