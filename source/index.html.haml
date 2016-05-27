@@ -80,4 +80,9 @@
 
     glitchIt();
 
-    var s = skrollr.init();
+    var isTouchDevice = "ontouchstart" in document.documentElement,
+        s = skrollr;
+
+    if (!isTouchDevice) {
+      s.init();
+    }
