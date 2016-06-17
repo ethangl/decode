@@ -16,6 +16,10 @@
   &.buybuybuy {
     background-color: $hot-purple;
     font-size: 3vh;
+
+    &:hover {
+      background-color: adjust-hue($hot-purple, 45deg);
+    }
   }
 
   &.speakers-call {
