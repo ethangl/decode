@@ -50,10 +50,26 @@ section {
   font-size: 25vh;
 }
 
-.uppercase {
-  text-transform: uppercase;
+// .uppercase {
+//   text-transform: uppercase;
+// }
+//
+// .lowercase {
+//   text-transform: lowercase;
+// }
+
+.x-small-break {
+  padding-left: 0.25em;
 }
 
-.lowercase {
-  text-transform: lowercase;
+.small-break {
+  padding-left: 0.5em;
+}
+
+.break {
+  padding-left: 1em;
+}
+
+.large-break {
+  padding-left: 2em;
 }

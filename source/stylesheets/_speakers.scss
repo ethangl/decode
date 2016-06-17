@@ -4,6 +4,8 @@
 }
 
 .speakers {
+  max-width: 1480px;
+
   h2 {
     background-color: #ea20fe;
     display: inline-block;
@@ -12,25 +14,17 @@
     padding: 10px 5rem 5px 10rem;
   }
 
-  .break {
-    display: inline-block;
-    margin-left: 3rem;
-  }
-
   .more-to-come {
-    text-align: right;
-    margin-right: -3em;
     font-size: 3vh;
-    margin-top: -3em;
-    margin-bottom: 0;
-    color: rgba(white, 0.6);
+    margin: 0;
+    letter-spacing: 4px;
   }
 }
 
 .speakers-list {
   list-style: none;
   padding-left: 0;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .speaker {
@@ -65,15 +59,18 @@
 
   p {
     color: rgba(white, 0.3);
-    text-indent: 0;
+    max-width: 400px;
     padding-left: 1vh;
+    text-indent: 0;
   }
 }
 
 .speak-at-krw {
-  margin-left: -2em;
+  clear: both;
+  margin-left: 21.5em;
+  padding-top: 2rem;
 
   p {
-    font-size: 2vh;
+    font-size: 1.4em;
   }
 }

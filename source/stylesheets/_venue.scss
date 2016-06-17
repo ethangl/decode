@@ -4,7 +4,7 @@
   font-weight: 300;
   margin-right: 20%;
   margin-top: 20vh;
-  max-width: 800px;
+  max-width: 900px;
   opacity: 0.85;
   position: relative;
 
@@ -14,6 +14,7 @@
     content: "The Conference venue is the historically weird Alamo Ritz Drafthouse, located in the heart of downtown. Each theater seat has its own table. During the conference you'll enjoy some weird talks as you're served gourmet food from the comfort of your oversized seat. All in front of one of the largest screens we've ever seen. After the conference you'll have plenty to see and do as the venue is located in the middle of world famous Sixth Street. Made up of dozens of bars and venues, you're guaranteed to hear a wide variety of live music as you walk down the street which is closed for pedestrian traffic for weekends. Known as 'The music capital of the world' Austin is where musicians come to be discovered and discover one another.";
     font-family: $base-font-family;
     letter-spacing: 2px;
+    pointer-events: none;
   }
 }
 
@@ -34,6 +35,7 @@
 .venue-name {
   font-size: 7vh;
   font-weight: 600;
+  letter-spacing: -1px;
   line-height: 0.6;
 }
 
@@ -43,7 +45,7 @@
   position: relative;
   right: -1rem;
   text-align: right;
-  top: -1.25rem;
+  top: -1rem;
 }
 
 .date {
