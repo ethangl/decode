@@ -2,8 +2,12 @@
   h2 {
     background-color: $hot-purple;
     letter-spacing: 5px;
-    padding: 12px 5rem 6px 10rem;
+    padding: 12px 5rem 6px 2rem;
     text-align: center;
     width: 100%;
+
+    @include media(600px) {
+      padding-left: 10rem;
+    }
   }
 }

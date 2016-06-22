@@ -23,7 +23,7 @@
     .date(data-anchor-target="#hero" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(10vh)")
       %span.date-day Friday, October 28, 2016
       %span.date-location Austin, Texas
-    = link_to "Buy Tickets", "#", class: "button buybuybuy"
+    = link_to "Buy Tickets", "https://ti.to/keep-ruby-weird/est", class: "button buybuybuy"
 
 %section.almost-full-height.prose#venue(data-bottom-top="filter: hue-rotate(0deg)" data-top-bottom="filter: hue-rotate(120deg)")
 
@@ -46,7 +46,7 @@
           %h3 Nick Mea<span class="x-small-break"></span>ns
           %p Coder, truth-seeker, functional impostor. VP of Engineering at WellMatch Health.
 
-  .speak-at-krw(data-anchor-target="#body" data-top="transform: translateY(12vh)" data-top-bottom="transform: translateY(-12vh)")
+  .speak-at-krw(data-anchor-target="#speakers" data-top="transform: translateY(-5vh)" data-top-bottom="transform: translateY(5vh)")
     %h3.more-to-come More speakers to come&hellip;
     %p We're looking for the only the top Webmasters to speak at our event. Candidates that are the best fit will have had 30 years experience in Ruby, 20 years experience working with Rails, and sufficient experience building software applications for the World Wide Web. Fill out our rather lame form:
     = link_to  "https://www.papercall.io/krw-2016", class: "button speakers-call" do
@@ -55,8 +55,14 @@
 %section.wrapper.sponsors#sponsors
   %header
     %h2 Spons<span class="break"></span>ors
-  %h3.more-to-come We're working on it
-  = image_tag "construction.gif"
+
+  %ul
+    %li
+      = link_to "http://thoughtbot.com/austin" do
+        thoughtbot
+    %li
+      = link_to "https://www.heroku.com/" do
+        Heroku
   .speak-at-krw
     %p It's been scientifically proven that sponsoring KRW is like getting a hug. Who doesn't want a hug? Of course you do. Help support our weirdness.
     = link_to "#", class: "button sponsor-hugs" do

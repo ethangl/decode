@@ -67,10 +67,13 @@
 
 .speak-at-krw {
   clear: both;
-  margin-left: 21.5em;
-  padding-top: 2rem;
+
+  @include media(1200px) {
+    margin-left: 21.5em;
+  }
 
   p {
     font-size: 1.4em;
+    max-width: 800px;
   }
 }

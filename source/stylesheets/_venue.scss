@@ -1,12 +1,15 @@
 .venue {
-  float: right;
   font-family: $heading-font-family;
   font-weight: 300;
-  margin-right: 20%;
   margin-top: 20vh;
   max-width: 900px;
   opacity: 0.85;
   position: relative;
+
+  @include media(600px) {
+    float: right;
+    margin-right: 20%;
+  }
 
   &::after {
     @include position(absolute, null -30px null -20%);
@@ -19,39 +22,60 @@
 }
 
 .venue-address {
-  display: block;
+  @include clearfix;
   font-style: normal;
   position: relative;
 }
 
 .venue-street {
   display: block;
-  font-size: 3vh;
-  line-height: 0.9;
+  font-size: 1.5em;
+  line-height: 0.6;
   margin-bottom: 0;
-  margin-left: 10rem;
+
+  @include media(400px) {
+    margin-left: 10rem;
+  }
+
+  @include media(min-height 800px) {
+    font-size: 3vh;
+  }
 }
 
 .venue-name {
-  font-size: 7vh;
+  display: block;
+  font-size: 56px;
   font-weight: 600;
   letter-spacing: -1px;
-  line-height: 0.6;
+  line-height: 0.8;
+
+  @include media(min-height 800px) {
+    font-size: 7vh;
+  }
 }
 
 .venue-state {
   display: block;
-  font-size: 3vh;
+  float: right;
+  font-size: 1.5em;
+  line-height: 0.5;
   position: relative;
-  right: -1rem;
-  text-align: right;
-  top: -1rem;
+
+  @include media(600px) {
+    right: -1em;
+  }
+
+  @include media(min-height 800px) {
+    font-size: 3vh;
+  }
 }
 
 .date {
-  left: -1em;
-  position: relative;
-  top: -4.5vh;
+  @include media(max-height 800px) {
+    top: 0;
+    left: -1em;
+    position: relative;
+  }
 }
 
 .date-location,
@@ -65,6 +89,9 @@
   mix-blend-mode: overlay;
   padding: 4px 0 1px;
   text-transform: uppercase;
-  width: 380px;
-}
+  width: 100%;
 
+  @include media(min-height 800px min-width 800px) {
+    width: 380px;
+  }
+}

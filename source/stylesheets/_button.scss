@@ -7,6 +7,7 @@
   padding: 0.5rem 1.5rem;
   text-indent: -1.25em;
   text-transform: uppercase;
+  font-size: 1.25em;
 
   &:hover {
     border-color: transparent;
@@ -15,30 +16,42 @@
 
   &.buybuybuy {
     background-color: $hot-purple;
-    font-size: 3vh;
 
     &:hover {
       background-color: adjust-hue($hot-purple, 45deg);
+    }
+
+    @include media(min-height 900px) {
+      font-size: 3vh;
     }
   }
 
   &.speakers-call {
     border: 1px solid #fff;
-    font-size: 1.25vh;
     text-indent: -3em;
     float: none;
+
+    @include media(min-height 900px) {
+      font-size: 1.25vh;
+    }
   }
 
   &.sponsor-hugs {
     border: 2px solid $sponsors-color;
     color: $sponsors-color;
-    font-size: 1.5vh;
     text-align: center;
     width: 120%;
+
+    @include media(min-height 900px) {
+      font-size: 1.5vh;
+    }
   }
 
   &.see-schedule {
     border: 1px solid #fff;
-    font-size: 1.5vh;
+
+    @include media(min-height 900px) {
+      font-size: 1.5vh;
+    }
   }
 }

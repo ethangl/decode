@@ -1,13 +1,21 @@
 .sponsors {
-  @include margin(15vh null);
+  @include margin(null null 15vw);
 
   h2 {
     background-color: $sponsors-color;
     display: inline-block;
     float: right;
     letter-spacing: 5px;
-    margin-right: -10rem;
-    padding: 4px 20rem 8px 6rem;
+    padding: 4px 1rem 8px 1rem;
+
+    @include media(max-width 1000px) {
+      width: 100%;
+    }
+
+    @include media(1000px) {
+      padding: 4px 20rem 8px 6rem;
+      margin-right: -10rem;
+    }
   }
 
   .more-to-come {
@@ -25,4 +33,8 @@
   .speak-at-krw{
     margin-left: 0;
   }
+}
+
+.sponsor-hugs {
+  max-width: 100%;
 }

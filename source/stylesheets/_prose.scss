@@ -5,12 +5,12 @@
 
   p {
     margin: 3vh 0;
-    font-size: 2vh;
+    font-size: 1.23em;
     font-weight: 300;
     line-height: 1.5;
-    
-    @include  media(max-height 800px){
-      font-size: 1.23em;
+
+    @include media(min-height 900px) {
+      font-size: 2vh;
     }
   }
 }
@@ -27,14 +27,22 @@
 
   .why-austin-wrapper & {
     margin-bottom: 0;
+
+    @include media(600px) {
+      letter-spacing: 52px;
+    }
   }
 }
 
 .prose-venue-content {
   background-color: rgba(#4a90e2, 0.6);
   display: inline-block;
-  margin-left: -$base-spacing;
   max-width: 60em;
+  margin-left: -1.5em;
+
+  @include media(600px) {
+    margin-left: -$base-spacing;
+  }
 }
 
 .prose-austin-content {

@@ -5,6 +5,10 @@ body {
   font-family: $base-font-family;
   height: 200vh;
   margin: 0;
+
+  @include media(max-width 600px) {
+    overflow-x: hidden;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -19,8 +23,12 @@ img {
 }
 
 section {
-  padding: $base-spacing;
+  padding: 1.5em;
   position: relative;
+
+  @include media(600px) {
+    padding: $base-spacing;
+  }
 
   &.almost-full-height {
     min-height: 95vh;
@@ -49,14 +57,6 @@ section {
   color: #B82A2A;
   font-size: 25vh;
 }
-
-// .uppercase {
-//   text-transform: uppercase;
-// }
-//
-// .lowercase {
-//   text-transform: lowercase;
-// }
 
 .x-small-break {
   padding-left: 0.25em;
