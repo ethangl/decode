@@ -30,11 +30,25 @@
     width: 100%;
   }
 
-  .speak-at-krw{
+  .speak-at-krw {
     margin-left: 0;
   }
 }
 
 .sponsor-hugs {
   max-width: 100%;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 8rem (-2rem) 4rem;
+  padding: 0;
+
+  li {
+    flex-basis: 9rem;
+    margin: 2rem;
+  }
 }

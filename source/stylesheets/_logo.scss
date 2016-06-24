@@ -2,6 +2,7 @@
   @include position(fixed, 5vh 5vh null null);
   @include size(20vh);
   mix-blend-mode: screen;
+  transform-origin: 50% 100%;
   z-index: 100;
 
   img {

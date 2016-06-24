@@ -1,0 +1,5 @@
+.audio {
+  @include position(fixed, null 0 0);
+  padding: 0 1rem 1rem;
+  text-align: center;
+}

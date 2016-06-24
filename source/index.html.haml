@@ -4,8 +4,8 @@
 .glitch#bg
   = image_tag "images/turtles.jpg"
 
-.circle(data-anchor-target="#body" data-top="transform: translateY(0vh); filter: hue-rotate(0deg)" data-top-bottom="transform: translateY(70vh); filter: hue-rotate(1080deg)")
-.logo(data-anchor-target="#body" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(70vh)")
+.circle(data-anchor-target="#body" data-top="transform: rotate(-5deg) translateY(0vh); filter: hue-rotate(0deg)" data-end="transform: rotate(4deg) translateY(70vh); filter: hue-rotate(1080deg)")
+.logo(data-anchor-target="#body" data-top="transform: rotate(-5deg) translateY(0vh)" data-end="transform: rotate(5deg) translateY(72h)")
   = image_tag "weirdo.svg"
 
 %h1.title
@@ -56,17 +56,19 @@
   %header
     %h2 Spons<span class="break"></span>ors
 
-  %ul
+  %ul.logos
     %li
       = link_to "http://thoughtbot.com/austin" do
-        thoughtbot
+        = image_tag "thoughtbot.png"
     %li
       = link_to "https://www.heroku.com/" do
-        Heroku
+        = image_tag "heroku.png"
+    %li
+      = image_tag "picard.jpg"
   .speak-at-krw
     %p It's been scientifically proven that sponsoring KRW is like getting a hug. Who doesn't want a hug? Of course you do. Help support our weirdness.
     = link_to "#", class: "button sponsor-hugs" do
-      Sponsor Keep Ruby Weird 2016 
+      Sponsor Keep Ruby Weird 2016
 
 %section.prose#why-austin(data-bottom-top="filter: hue-rotate(0deg)" data-top-bottom="filter: hue-rotate(120deg)")
   .why-austin-wrapper
@@ -78,6 +80,9 @@
   %header
     %h2 Schedu<span class="large-break"></span>le
   = link_to "See Schedule", "https://www.youtube.com/watch?v=erh2ngRZxs0", class: "button see-schedule"
+
+.audio
+  %audio(src="paragliding.mp3" preload="auto" autoplay controls)
 
 - content_for :javascript do
   :javascript
