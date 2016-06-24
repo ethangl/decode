@@ -1,17 +1,19 @@
 .audio-container {
-  @include position(fixed, null 0 0);
+  @include position(fixed, 100% 0 null);
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
 .audio {
-  display: inline-block;
-  padding: 0 1rem 1rem;
+  margin-top: -30px;
+  padding: 0 2rem;
 
   &:hover audio {
-    transform: translateY(4rem);
+    margin-top: 60px;
   }
 
   audio {
-    transition: 0.333s $ease-in-out-back;
+    transition: margin 0.333s $ease-in-out-back;
   }
 }
