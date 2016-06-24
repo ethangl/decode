@@ -1,5 +1,17 @@
-.audio {
+.audio-container {
   @include position(fixed, null 0 0);
-  padding: 0 1rem 1rem;
   text-align: center;
+}
+
+.audio {
+  display: inline-block;
+  padding: 0 1rem 1rem;
+
+  &:hover audio {
+    transform: translateY(4rem);
+  }
+
+  audio {
+    transition: 0.333s $ease-in-out-back;
+  }
 }

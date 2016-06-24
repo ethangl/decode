@@ -4,15 +4,15 @@
 .glitch#bg
   = image_tag "images/turtles.jpg"
 
-.circle(data-anchor-target="#body" data-top="transform: rotate(-5deg) translateY(0vh); filter: hue-rotate(0deg)" data-end="transform: rotate(4deg) translateY(70vh); filter: hue-rotate(1080deg)")
-.logo(data-anchor-target="#body" data-top="transform: rotate(-5deg) translateY(0vh)" data-end="transform: rotate(5deg) translateY(72h)")
+.circle(data-anchor-target="#body" data-start="transform: rotate(-5deg) translateY(0vh); filter: hue-rotate(0deg)" data-end="transform: rotate(4deg) translateY(70vh); filter: hue-rotate(1080deg)")
+.logo(data-anchor-target="#body" data-start="transform: rotate(-5deg) translateY(0vh)" data-end="transform: rotate(5deg) translateY(72h)")
   = image_tag "weirdo.svg"
 
 %h1.title
-  %span(data-anchor-target="#body" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(-10vh)") KEEP
-  %span(data-anchor-target="#body" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(-12vh)") RUBY
-  %span(data-anchor-target="#body" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(-14vh)") WEIRD
-  %span.title-state(data-anchor-target="#body" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(-16vh)") Austin, Texas
+  %span(data-anchor-target="#body" data-start="transform: translateY(0vh)" data-end="transform: translateY(-8vh)") KEEP
+  %span(data-anchor-target="#body" data-start="transform: translateY(0vh)" data-end="transform: translateY(-16vh)") RUBY
+  %span(data-anchor-target="#body" data-start="transform: translateY(0vh)" data-end="transform: translateY(-24vh)") WEIRD
+  %span.title-state(data-anchor-target="#body" data-start="transform: translateY(0vh)" data-end="transform: translateY(-32vh)") Austin, Texas
 
 %section.almost-full-height#hero
   %header.venue
@@ -20,28 +20,28 @@
       %span.venue-street(data-anchor-target="#hero" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(-10vh)") 320 E 6th St.
       %span.venue-name Alamo Drafthouse Ritz
       %span.venue-state(data-anchor-target="#hero" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(5vh)") Austin, TX 78701
-    .date(data-anchor-target="#hero" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(10vh)")
+    .date(data-anchor-target="#hero" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(50vh)")
       %span.date-day Friday, October 28, 2016
       %span.date-location Austin, Texas
     = link_to "Buy Tickets", "https://ti.to/keep-ruby-weird/est", class: "button buybuybuy"
 
 %section.almost-full-height.prose#venue(data-bottom-top="filter: hue-rotate(0deg)" data-top-bottom="filter: hue-rotate(120deg)")
 
-  %h2.prose-title.venue-title(data-anchor-target="#body" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(-10vh)") Ab<span class="small-break"></span>out the Drafthouse
+  %h2.prose-title.venue-title(data-anchor-target="#body" data-start="transform: translateY(0vh)" data-end="transform: translateY(-10vh)") Ab<span class="small-break"></span>out the Drafthouse
 
-  .prose-venue-content(data-anchor-target="#body" data-top="transform: translateY(0vh)" data-top-bottom="transform: translateY(-20vh)")
+  .prose-venue-content(data-anchor-target="#body" data-start="transform: translateY(0vh)" data-end="transform: translateY(-20vh)")
     %p The Conference venue is the historically weird Alamo Ritz Drafthouse, located in the heart of downtown. Each theater seat has its own table. During the conference you'll enjoy some weird talks as you're served gourmet food from the comfort of your oversized seat. All in front of one of the largest screens we've ever seen.
     %p After the conference you'll have plenty to see and do as the venue is located in the middle of world famous Sixth Street. Made up of dozens of bars and venues, you're guaranteed to hear a wide variety of live music as you walk down the street which is closed for pedestrian traffic for weekends. Known as "The music capital of the world" Austin is where musicians come to be discovered and discover one another.
 
 %section.wrapper.speakers#speakers
   %header
-    %h2(data-anchor-target="#body" data-top="transform: translateY(10vh)" data-top-bottom="transform: translateY(-10vh)") Spe<span class="break">akers</span>
+    %h2(data-anchor-target="#body" data-start="transform: translateY(10vh)" data-end="transform: translateY(-10vh)") Spe<span class="break">akers</span>
 
   %ul.speakers-list
-    %li.speaker(data-anchor-target="#body" data-top="transform: translateY(5vh)" data-top-bottom="transform: translateY(-5vh)")
+    %li.speaker(data-anchor-target="#body" data-start="transform: translateY(5vh)" data-end="transform: translateY(-5vh)")
       = link_to  "https://twitter.com/nmeans" do
         = image_tag "https://pbs.twimg.com/profile_images/635576395565953024/5bhOBmOu.jpg", class: "speaker-image"
-        .speaker-about(data-anchor-target="#body" data-top="transform: translateY(8vh)" data-top-bottom="transform: translateY(-8vh)")
+        .speaker-about(data-anchor-target="#body" data-start="transform: translateY(8vh)" data-end="transform: translateY(-8vh)")
           %h4 Keynote
           %h3 Nick Mea<span class="x-small-break"></span>ns
           %p Coder, truth-seeker, functional impostor. VP of Engineering at WellMatch Health.
@@ -81,8 +81,9 @@
     %h2 Schedu<span class="large-break"></span>le
   = link_to "See Schedule", "https://www.youtube.com/watch?v=erh2ngRZxs0", class: "button see-schedule"
 
-.audio
-  %audio(src="paragliding.mp3" preload="auto" autoplay controls)
+.audio-container
+  .audio
+    %audio(src="paragliding.mp3" preload="auto" autoplay controls)
 
 - content_for :javascript do
   :javascript
