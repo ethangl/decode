@@ -1,0 +1,1 @@
+function loadImage(n,a){var t=new Image;t.onload=function(){a(t)},t.src=n}function glitchImage(n){loadImage(imgPath,function(a){glitch(n).fromImage(a).toDataURL().then(function(n){var a=new Image;a.src=n,imgContainer.innerHTML="",imgContainer.appendChild(a)})})}function randomInteger(n,a){return Math.round(Math.random()*(a-n+1))+n}
