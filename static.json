@@ -1,5 +1,6 @@
 {
   "root": "build",
+  "clean_urls": true,
   "headers": {
     "/images/*": {
       "Cache-Control": "public, max-age=512000"
