@@ -18,7 +18,7 @@
       "url": "heroku/ruby"
     },
     {
-      "url": "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/static.tgz"
+      "url": "https://github.com/heroku/heroku-buildpack-static#sabayon"
     }
   ]
 }

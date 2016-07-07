@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.3.0"
+ruby "2.3.1"
 
 gem "slim"
 gem "middleman"
@@ -11,3 +11,4 @@ gem "middleman-autoprefixer"
 gem "jquery-middleman"
 gem "bourbon"
 gem "neat"
+gem "rake"
