@@ -1,3 +1,17 @@
 {
-  "root": "build"
+  "root": "build",
+  "headers": {
+    "/images/*": {
+      "Cache-Control": "public, max-age=512000"
+    },
+    "/javascripts/**": {
+      "Cache-Control": "public, max-age=512000"
+    },
+    "/stylesheets/*": {
+      "Cache-Control": "public, max-age=512000"
+    },
+    "/paragliding.mp3": {
+      "Cache-Control": "public, max-age=51200"
+    }
+  }
 }
