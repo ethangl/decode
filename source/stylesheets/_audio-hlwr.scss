@@ -1,0 +1,34 @@
+.audio-container {
+  @include position(fixed, 100% 0 null);
+  justify-content: center;
+  text-align: center;
+}
+
+.audio-container:hover {
+  audio {
+    transform: translate(0, 60px);;
+  }
+
+  .hlwr {
+    transform: translate(0, -60px);
+  }
+}
+
+.audio {
+  transform: translate(0, -30px);;
+  padding: 0 2rem;
+
+  audio {
+    transition: transform 0.333s $ease-in-out-back;
+  }
+}
+
+.hlwr {
+  background-color: $hot-pink;
+  display: inline-block;
+  transition: transform 0.333s $ease-in-out-back;
+
+  a {
+    color: white;
+  }
+}
