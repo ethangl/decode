@@ -5,11 +5,11 @@
 }
 
 .audio-container:hover {
-  audio {
+  audio.playing {
     transform: translate(0, 60px);;
   }
 
-  .hlwr {
+  .hlwr.playing {
     transform: translate(0, -60px);
   }
 }

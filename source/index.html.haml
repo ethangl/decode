@@ -91,7 +91,7 @@
 
 .audio-container
   .audio
-    %audio(src="paragliding.mp3" preload="auto" autoplay controls)
+    %audio(src="paragliding.mp3" preload="auto" controls)
   .hlwr
     = link_to "<~", "http://hotlinewebring.club/KeepRubyWeird/previous"
     = link_to "HLWR", "http://hotlinewebring.club"
@@ -121,4 +121,11 @@
 
     if (!isTouchDevice) {
       s.init();
+    }
+
+    var audio = document.querySelector("audio");
+    var hlwr  = document.querySelector(".hlwr");
+    audio.onplaying = function() {
+      audio.className = "playing";
+      hlwr.className += " playing";
     }
