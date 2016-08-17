@@ -50,5 +50,18 @@
   li {
     flex-basis: 9rem;
     margin: 2rem;
+
+    &.platinum {
+      flex-basis: 12rem;
+    }
+
+    &.ownlocal {
+      flex-basis: 10rem;
+      margin: 1rem;
+    }
+
+    &.heroku {
+      flex-basis: 8rem;
+    }
   }
 }
