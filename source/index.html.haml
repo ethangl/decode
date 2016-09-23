@@ -54,7 +54,34 @@
         = image_tag "https://pbs.twimg.com/profile_images/651150543927185408/xq5Dy6Z5.jpg", class: "speaker-image"
 
   .speak-at-krw(data-anchor-target="#speakers" data-top="transform: translateY(-5vh)" data-top-bottom="transform: translateY(5vh)")
-    %h3.more-to-come More speakers to come&hellip;
+    %h3.more-to-come More speakers&hellip;
+
+    %ul.more-speakers-list
+      %li(data-anchor-target="#body" data-start="transform: translateY(5vh)" data-end="transform: translateY(-5vh)")
+        = link_to  "http://www.craigkerstiens.com" do
+          = image_tag "images/craig.jpeg", class: "more-speaker-image", alt: "Craig Kerstiens"
+          .speaker-about.more-speaker-about(data-anchor-target="#body" data-start="transform: translateY(8vh)" data-end="transform: translateY(-8vh)")
+            %h3 Craig Kers<span class="x-small-break"></span>tiens
+            %p Citus Data
+      %li(data-anchor-target="#body" data-start="transform: translateY(5vh)" data-end="transform: translateY(-5vh)")
+        = link_to  "http://haughtcodeworks.com/" do
+          = image_tag "images/marty.png", class: "more-speaker-image", alt: "Craig Kerstiens"
+          .speaker-about.more-speaker-about(data-anchor-target="#body" data-start="transform: translateY(8vh)" data-end="transform: translateY(-8vh)")
+            %h3 Marty Ha<span class="x-small-break"></span>ught
+            %p Haught Codeworks
+      %li(data-anchor-target="#body" data-start="transform: translateY(5vh)" data-end="transform: translateY(-5vh)")
+        = link_to  "http://kyfast.net/" do
+          = image_tag "images/kylie.jpeg", class: "more-speaker-image", alt: "Craig Kerstiens"
+          .speaker-about.more-speaker-about(data-anchor-target="#body" data-start="transform: translateY(8vh)" data-end="transform: translateY(-8vh)")
+            %h3 Kylie St<span class="x-small-break"></span>radley
+            %p MailChimp
+      %li(data-anchor-target="#body" data-start="transform: translateY(5vh)" data-end="transform: translateY(-5vh)")
+        = link_to  "http://www.jruby.org" do
+          = image_tag "images/thomas.jpeg", class: "more-speaker-image", alt: "Craig Kerstiens"
+          .speaker-about.more-speaker-about(data-anchor-target="#body" data-start="transform: translateY(8vh)" data-end="transform: translateY(-8vh)")
+            %h3 Thom<span class="x-small-break"></span>as Enebo
+            %p Red Hat Inc.
+
     %p We're looking for only the top Webmasters to speak at our event. Candidates that are the best fit will have had 30 years experience in Ruby, 20 years experience working with Rails, and sufficient experience building software applications for the World Wide Web. Fill out our form:
     = link_to  "https://www.papercall.io/krw-2016", class: "button speakers-call" do
       Call for Proposals

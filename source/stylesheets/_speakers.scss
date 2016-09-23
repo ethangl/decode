@@ -39,7 +39,7 @@
 .speaker-about {
   color: white;
   float: left;
-  max-width: 50%;
+  text-decoration: none;
   text-indent: -4vh;
 
   h4 {
@@ -69,11 +69,65 @@
   clear: both;
 
   @include media(1200px) {
-    margin-left: 21.5em;
+    margin-left: 12em;
+    margin-top: 6em;
   }
 
   p {
     font-size: 1.4em;
     max-width: 800px;
+  }
+}
+
+.more-speakers-list {
+  list-style-type: none;
+  max-width: 100%;
+  overflow: hidden;
+
+  li {
+
+    @include media (920px) {
+      float: left;
+      margin-bottom: 3em;
+      margin-right: 3em;
+
+      &:nth-of-type(2n+2) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(3) {
+        margin-left: 5em;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.more-speaker-image {
+  float: left;
+  max-width: 200px;
+}
+
+.more-speaker-about {
+  mix-blend-mode: difference;
+  clear: both;
+  float: none;
+
+  @include media(920px) {
+    clear: none;
+    float: left;
+  }
+
+
+  h3 {
+    font-size: 4vh;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 0;
   }
 }
