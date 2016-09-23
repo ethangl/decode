@@ -81,10 +81,21 @@
           .speaker-about.more-speaker-about(data-anchor-target="#body" data-start="transform: translateY(8vh)" data-end="transform: translateY(-8vh)")
             %h3 Thom<span class="x-small-break"></span>as Enebo
             %p Red Hat Inc.
-
-    %p We're looking for only the top Webmasters to speak at our event. Candidates that are the best fit will have had 30 years experience in Ruby, 20 years experience working with Rails, and sufficient experience building software applications for the World Wide Web. Fill out our form:
-    = link_to  "https://www.papercall.io/krw-2016", class: "button speakers-call" do
-      Call for Proposals
+      %li(data-anchor-target="#body" data-start="transform: translateY(5vh)" data-end="transform: translateY(-5vh)")
+        = link_to  "http://testdouble.com" do
+          = image_tag "images/justin.jpeg", class: "more-speaker-image", alt: "Justin Searls"
+          .speaker-about.more-speaker-about(data-anchor-target="#body" data-start="transform: translateY(8vh)" data-end="transform: translateY(-8vh)")
+            %h3 Ju<span class="x-small-break"></span>stin Searls
+            %p Test Double
+  .speak-at-krw(data-anchor-target="#speakers" data-top="transform: translateY(-5vh)" data-top-bottom="transform: translateY(5vh)")
+    %h3.more-to-come And our Master of Ceremonies
+    %ul.more-speakers-list
+      %li(data-anchor-target="#body" data-start="transform: translateY(5vh)" data-end="transform: translateY(-5vh)")
+        = link_to  "http://brandonhays.com" do
+          = image_tag "images/brandon.jpeg", class: "more-speaker-image", alt: "Brandon Hays"
+          .speaker-about.more-speaker-about(data-anchor-target="#body" data-start="transform: translateY(8vh)" data-end="transform: translateY(-8vh)")
+            %h3 Brandon H<span class="x-small-break">ay<span class="x-small-break">s
+            %p The Frontside
 
 %section.wrapper.sponsors#sponsors
   %header
