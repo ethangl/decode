@@ -1,17 +1,24 @@
-.prose { 
-  background-size: cover; 
+.prose {
+  background-size: cover;
   box-shadow: 0 0 10vh rgba(#000, 0.2);
   color: #fff;
 
-  p {
+  p{
     margin: 3vh 0;
-    font-size: 1.23em;
+    font-size: 1.2em;
     font-weight: 300;
     line-height: 1.5;
 
     @include media(min-height 900px) {
       font-size: 2vh;
     }
+  }
+}
+
+.prose-subpage-content {
+  p, li {
+    font-size: 1.23em;
+    line-height: 1.5;
   }
 }
 
@@ -23,6 +30,10 @@
   &.venue-title {
     margin-bottom: -1.25rem;
     margin-top: -1.8em;
+  }
+
+  &.subpage-title {
+    margin-bottom: -.45em;
   }
 
   .why-austin-wrapper & {
@@ -48,6 +59,64 @@
 .prose-austin-content {
   background-color: rgba(red, 0.6);
   padding: 0.5em 2em;
+}
+
+.prose-conduct-content {
+  background-color: rgba(#ff7f77, 0.7);
+  padding: 0.5em 2em;
+  margin: auto;
+  max-width: 70em;
+}
+
+.prose-sponsor-content {
+  @extend .prose-conduct-content;
+  background-color: rgba(#990066, 0.6);
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: $hot-green;
+    }
+  }
+}
+
+.prose-sponsor-level {
+  background-color: rgba(#008592, 0.6);
+  padding: 0.75em 0;
+  max-width: 70em;
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+
+  @include media(600px) {
+    margin-left: -$base-spacing;
+  }
+
+  p {
+    text-indent: 1em;
+  }
+
+  h3 {
+    font-size: 3vh;
+    margin: 1em 0 -0.5em;
+    text-indent: .5em;
+    opacity: 0.6;
+    text-transform: lowercase;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  header {
+    padding: .5em 0;
+  }
+
+  h2 {
+    background-color: #5ed536;
+    letter-spacing: 5px;
+    width: 375px;
+  }
 }
 
 #venue {
