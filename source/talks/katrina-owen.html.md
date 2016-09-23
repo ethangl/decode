@@ -1,6 +1,8 @@
 ---
 ---
-```json
+
+<pre>
+```
 {
   "title": "Cultivating Instinct",
   "name": "Katrina Owen",
@@ -11,3 +13,4 @@
   "bio": "Katrina is an open source advocate at GitHub. She accidentally became a developer while pursuing a degree in molecular biology. When programming, her focus is on automation, workflow optimization, and refactoring. She works primarily in Go and Ruby, contributes to several open source projects, and is the creator of exercism.io."
 }
 ```
+</pre>
